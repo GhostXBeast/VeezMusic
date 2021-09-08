@@ -97,7 +97,7 @@ async def generate_cover(title, thumbnail):
     Image.alpha_composite(image5, image6).save("temp.png")
     img = Image.open("temp.png")
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("etc/font.otf", 60)
+    font = ImageFont.truetype("etc/Edge Of Madness 400.otf", 60)
     draw.text((40, 550), "Playing here...", (0, 0, 0), font=font)
     draw.text((40, 630), f"{title}", (0, 0, 0), font=font)
     img.save("final.png")
